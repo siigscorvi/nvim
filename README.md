@@ -3,7 +3,7 @@ The flake setup is mostly stolem from [this guide](https://primamateria.github.i
 
 You can try my config by running:
 ```bash
-nix run github:siigscorvi/.nvim -- 
+nix run github:siigscorvi/nvim -- 
 ```
 
 # Neovim configuration
