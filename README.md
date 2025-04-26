@@ -29,11 +29,13 @@ nix run github:siigscorvi/nvim --
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keys, which otherwise wouldn't need a file
-- [ ] gruvbox colorscheme
+- [x] gruvbox colorscheme
 - [ ] git integration
 
 easy file navigation and manipulation
 - [ ] file browser to create, move, copy, rename, delete files
+- [x] telescope integration
+- [ ] telescope extensions
 - [ ] easy moving when editing multiple files
 - [ ] easy, good looking folds
 - [ ]

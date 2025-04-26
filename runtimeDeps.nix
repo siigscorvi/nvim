@@ -1,4 +1,8 @@
 { pkgs }:
 {
-  deps = with pkgs; [ ];
+  deps = with pkgs; [ 
+    # telescope
+    ripgrep
+    fd
+  ];
 }
