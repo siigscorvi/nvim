@@ -50,17 +50,18 @@ let
 in
   with pkgs.vimPlugins; [
 # code analysis
-    (nvim-treesitter.withPlugins (treesitter))
+    (nvim-treesitter.withPlugins treesitter)
 
 # file navigation
     plenary-nvim # dependency for telescope
     telescope-nvim 
     telescope-fzf-native-nvim # fuzzy finder implementation for telescope
-
+    telescope-file-browser-nvim
+    telescope-cmdline-nvim
+    # telescope-lua-snip-nvim # waiting for luasnip
 
 # styling
     gruvbox-nvim
     nvim-web-devicons
-
 
   ]

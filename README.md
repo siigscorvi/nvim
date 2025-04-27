@@ -29,7 +29,6 @@ nix run github:siigscorvi/nvim --
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keys, which otherwise wouldn't need a file
-- [x] gruvbox colorscheme
 - [x] treesitter for all supported use cases
 - [ ] git integration
 
@@ -41,6 +40,10 @@ easy file navigation and manipulation
 - [ ] easy, good looking folds
 - [ ]
 
+Styling
+- [x] gruvbox colorscheme
+- [x] floating commandline
+
 - [ ] lsp
 - [ ] linter
 
@@ -50,3 +53,11 @@ easy file navigation and manipulation
 - [ ] C and C++
 - [ ] bash
 - [ ] Python and Jupyter
+
+
+## Bookmarks for future plugins
+- telescope-manix
+- yanky.nvim (with telescope integr.)
+- cheatsheet-nvim
+- telescope-menu.nvim
+

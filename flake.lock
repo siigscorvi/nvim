@@ -202,7 +202,41 @@
     "root": {
       "inputs": {
         "neovim": "neovim",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "telescope-cmdline-nvim": "telescope-cmdline-nvim",
+        "telescope-luasnip-nvim": "telescope-luasnip-nvim"
+      }
+    },
+    "telescope-cmdline-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1745352557,
+        "narHash": "sha256-jMEX0hjI3HV46e/Ml4DD+EUaHzaUf7e+bfywd1iddxw=",
+        "owner": "jonarrien",
+        "repo": "telescope-cmdline.nvim",
+        "rev": "e1e4a5bfd043bd6f940384b211177ee54f5aa881",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jonarrien",
+        "repo": "telescope-cmdline.nvim",
+        "type": "github"
+      }
+    },
+    "telescope-luasnip-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1734145237,
+        "narHash": "sha256-9XsV2hPjt05q+y5FiSbKYYXnznDKYOsDwsVmfskYd3M=",
+        "owner": "benfowler",
+        "repo": "telescope-luasnip.nvim",
+        "rev": "07a2a2936a7557404c782dba021ac0a03165b343",
+        "type": "github"
+      },
+      "original": {
+        "owner": "benfowler",
+        "repo": "telescope-luasnip.nvim",
+        "type": "github"
       }
     },
     "treefmt-nix": {
