@@ -33,9 +33,9 @@ nix run github:siigscorvi/nvim --
 - [ ] git integration
 
 easy file navigation and manipulation
-- [ ] file browser to create, move, copy, rename, delete files
+- [x] file browser to create, move, copy, rename, delete files
 - [x] telescope integration
-- [ ] telescope extensions
+- [x] telescope extensions
 - [ ] easy moving when editing multiple files
 - [ ] easy, good looking folds
 - [ ]
