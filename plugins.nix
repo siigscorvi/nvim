@@ -10,5 +10,7 @@ with pkgs.vimPlugins; [
 
 # styling
   gruvbox-nvim
+  nvim-web-devicons
+
 
 ]
