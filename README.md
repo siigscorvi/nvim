@@ -9,10 +9,12 @@ nix run github:siigscorvi/nvim --
 # Neovim configuration
 ## Goals
 - easy file navigation
+- syntax highlighting, code analysis, formatting, style linting
 - git integration (at least highlighting of changes)
 - tmux compatibility for my setup
 - floating cmdline
 
+- treesitter folding...?
 
 ### Language specific
 #### Markdown
@@ -30,6 +32,7 @@ nix run github:siigscorvi/nvim --
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keys, which otherwise wouldn't need a file
 - [x] gruvbox colorscheme
+- [x] treesitter for all supported use cases
 - [ ] git integration
 
 easy file navigation and manipulation
@@ -49,4 +52,3 @@ easy file navigation and manipulation
 - [ ] C and C++
 - [ ] bash
 - [ ] Python and Jupyter
-

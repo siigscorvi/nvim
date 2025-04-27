@@ -1,6 +1,53 @@
 { pkgs }:
 # List all the plugins I need here
 with pkgs.vimPlugins; [
+# code analysis
+  (nvim-treesitter.withPlugins (p: with p; [ 
+    asm
+    bash
+    bibtex
+    c
+    cmake
+    comment
+    cpp
+    css
+    csv
+    diff
+    dockerfile
+    doxygen
+    git_config
+    git_rebase
+    gitattributes
+    gitcommit
+    gitignore
+    go
+    gomod
+    gotmpl
+    gosum
+    gowork
+    html
+    http
+    json
+    latex
+    lua
+    luadoc
+    luap
+    make
+    markdown
+    markdown_inline
+    nix
+    printf
+    python
+    requirements
+    sql
+    ssh_config
+    tmux
+    toml
+    vim
+    vimdoc
+    xml
+    yaml
+  ]))
 
 # file navigation
   plenary-nvim # dependency for telescope
