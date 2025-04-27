@@ -14,8 +14,6 @@ nix run github:siigscorvi/nvim --
 - tmux compatibility for my setup
 - floating cmdline
 
-- treesitter folding...?
-
 ### Language specific
 #### Markdown
 - inline preview and in browser
