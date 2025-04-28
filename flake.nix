@@ -8,11 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    telescope-cmdline-nvim = {
-      url = "github:jonarrien/telescope-cmdline.nvim";
-      flake = false;
-    };
-
     telescope-luasnip-nvim = {
       url = "github:benfowler/telescope-luasnip.nvim";
       flake = false;
@@ -20,16 +15,11 @@
 
   };
 
-  outputs = { self, nixpkgs, neovim, telescope-cmdline-nvim, telescope-luasnip-nvim }:
+  outputs = { self, nixpkgs, neovim, telescope-luasnip-nvim }:
     let
 
       overlayFlakeInputs = final: prev: {
         vimPlugins = prev.vimPlugins // {
-
-          telescope-cmdline-nvim = import ./packages/vimPlugins/telescope-cmdline-nvim.nix {
-            src = telescope-cmdline-nvim;
-            pkgs = prev;
-          };
 
           telescope-luasnip-nvim = import ./packages/vimPlugins/telescope-luasnip-nvim.nix {
             src = telescope-luasnip-nvim;

@@ -203,24 +203,7 @@
       "inputs": {
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
-        "telescope-cmdline-nvim": "telescope-cmdline-nvim",
         "telescope-luasnip-nvim": "telescope-luasnip-nvim"
-      }
-    },
-    "telescope-cmdline-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1745352557,
-        "narHash": "sha256-jMEX0hjI3HV46e/Ml4DD+EUaHzaUf7e+bfywd1iddxw=",
-        "owner": "jonarrien",
-        "repo": "telescope-cmdline.nvim",
-        "rev": "e1e4a5bfd043bd6f940384b211177ee54f5aa881",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jonarrien",
-        "repo": "telescope-cmdline.nvim",
-        "type": "github"
       }
     },
     "telescope-luasnip-nvim": {

@@ -57,11 +57,14 @@ in
     telescope-nvim 
     telescope-fzf-native-nvim # fuzzy finder implementation for telescope
     telescope-file-browser-nvim
-    telescope-cmdline-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
 
 # styling
     gruvbox-nvim
     nvim-web-devicons
+
+    nui-nvim
+    nvim-notify
+    noice-nvim
 
   ]
