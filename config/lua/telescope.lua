@@ -28,4 +28,5 @@ vim.keymap.set("n", "<space>tc", ":Telescope file_browser path=%:p:h select_buff
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("file_browser")
 -- require("telescope").load_extension("luasnip")
+require("telescope").load_extension("noice")
 
