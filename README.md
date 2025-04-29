@@ -29,6 +29,7 @@ nix run github:siigscorvi/nvim --
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
+- [ ] whichkey.nvim 
 
 completion and snippets
 - [x] blink.cmp
@@ -37,8 +38,12 @@ completion and snippets
 - [ ] create Luasnippets
 
 editing helpers
-- [ ] git integration
+- [x] git integration
 - [ ] trouble.nvim
+- [ ] indent guides
+- [ ] easy, good looking folds
+- [ ] autopairs / surround
+- [ ] autoformating
 
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
@@ -60,16 +65,14 @@ easy file navigation and manipulation
 - [x] telescope integration
 - [x] telescope extensions
 - [ ] easy moving when editing multiple files
-- [ ] easy, good looking folds
 - [ ]
 
 Styling
 - [x] gruvbox colorscheme
 - [x] floating commandline
 - [x] good looking messages / notifications
-
-
-
+- [ ] greeter
+- [ ] bufferline
 
 ## Bookmarks for future plugins
 - telescope-manix

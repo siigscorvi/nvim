@@ -53,6 +53,7 @@ in
 
 # editing support
     blink-cmp
+    gitsigns-nvim
   
 
 # code analysis
