@@ -26,9 +26,6 @@ nix run github:siigscorvi/nvim --
 - images
 - surround for text style
 
-
-
-
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
