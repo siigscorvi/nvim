@@ -34,7 +34,7 @@ nix run github:siigscorvi/nvim --
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
 
 completion and snippets
-- [ ] blink.cmp
+- [x] blink.cmp
 - [ ] [additional sources for blink](https://cmp.saghen.dev/configuration/sources#community-sources)
 - [ ] LuaSnip
 - [ ] create Luasnippets
@@ -50,13 +50,13 @@ code analysis, language servers and linters
 - [ ] nix
 - [ ] lua
 - [ ] LaTeX
-
+- [ ] grammar
 - [ ] C and C++
 - [ ] bash
 - [ ] Python and Jupyter
  
 navigation
-- [ ] tmux compatibility
+- [x] tmux compatibility
 
 easy file navigation and manipulation
 - [x] file browser to create, move, copy, rename, delete files

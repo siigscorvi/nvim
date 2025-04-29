@@ -65,6 +65,9 @@ in
     telescope-file-browser-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
 
+# terminal navigation
+    tmux-nvim
+
 # styling
     gruvbox-nvim
     nvim-web-devicons
