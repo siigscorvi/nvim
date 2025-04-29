@@ -49,6 +49,12 @@ let
     ];
 in
   with pkgs.vimPlugins; [
+# debugging
+
+# editing support
+    blink-cmp
+  
+
 # code analysis
     (nvim-treesitter.withPlugins treesitter)
 
