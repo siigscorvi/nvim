@@ -57,12 +57,12 @@ in
     blink-emoji-nvim
     blink-nerdfont-nvim
     blink-cmp-conventional-commits
-    lspkind-nvim
     gitsigns-nvim
-  
+
 
 # code analysis
     (nvim-treesitter.withPlugins treesitter)
+
 
 # file navigation
     plenary-nvim # dependency for telescope
@@ -71,12 +71,18 @@ in
     telescope-file-browser-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
 
+
 # terminal navigation
     tmux-nvim
 
+
 # styling
     gruvbox-nvim
+
     nvim-web-devicons
+    lspkind-nvim
+    
+    which-key-nvim
 
     nui-nvim
     nvim-notify

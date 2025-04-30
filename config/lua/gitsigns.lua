@@ -67,7 +67,7 @@ require('gitsigns').setup {
         else
           gitsigns.nav_hunk('next')
         end
-      end)
+      end, { desc = "Gitsigns: navigate to next git hunk" })
 
       map('n', '[c', function()
         if vim.wo.diff then
@@ -75,44 +75,39 @@ require('gitsigns').setup {
         else
           gitsigns.nav_hunk('prev')
         end
-      end)
+      end, { desc = "Gitsigns: navite to previous git hunk" })
 
       -- Actions
-      map('n', '<leader>hs', gitsigns.stage_hunk)
-      map('n', '<leader>hr', gitsigns.reset_hunk)
+      map('n', '<leader>hs', gitsigns.stage_hunk, { desc = "Gitsigns: stage the hunk currently inside of" })
+      map('n', '<leader>hr', gitsigns.reset_hunk, { desc = "Gitsigns: reset/restore the hunk currenty inside of" })
 
      map('v', '<leader>hs', function()
         gitsigns.stage_hunk({ vim.fn.line('.'), vim.fn.line('v') })
-      end)
+      end, { desc = "Gitsigns: stage the hunk currently selected in visual mode" })
 
       map('v', '<leader>hr', function()
         gitsigns.reset_hunk({ vim.fn.line('.'), vim.fn.line('v') })
-      end)
+      end, { desc = "Gitsigns: reset/restore the hunk currently selected in visual mode" })
 
-      map('n', '<leader>hS', gitsigns.stage_buffer)
-      map('n', '<leader>hR', gitsigns.reset_buffer)
-      map('n', '<leader>hp', gitsigns.preview_hunk)
-      map('n', '<leader>hi', gitsigns.preview_hunk_inline)
+      map('n', '<leader>hS', gitsigns.stage_buffer, { desc = "Gitsigns: stage the buffer currently inside of" })
+      map('n', '<leader>hR', gitsigns.reset_buffer, { desc = "Gitsigns: reset/restore the buffer currently inside of" })
+      map('n', '<leader>hp', gitsigns.preview_hunk, { desc = "Gitsigns: show diff of current hunk in a popup" })
+      map('n', '<leader>hi', gitsigns.preview_hunk_inline, { desc = "Gitsigns: show diff of current hunk inline" })
 
       map('n', '<leader>hb', function()
         gitsigns.blame_line({ full = true })
-      end)
+      end, { desc = "Gitsigns: show blame information for the current line in popup" })
 
-      map('n', '<leader>hd', gitsigns.diffthis)
+      map('n', '<leader>hd', gitsigns.diffthis, { desc = "Gitsigns: show the full diff of the current file in extra window" })
 
-      map('n', '<leader>hD', function()
-        gitsigns.diffthis('~')
-      end)
-
-      map('n', '<leader>hQ', function() gitsigns.setqflist('all') end)
-      map('n', '<leader>hq', gitsigns.setqflist)
+      map('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = "Gitsigns: show the full diff of the current file with ~ in extra window" })
 
       -- Toggles
-      map('n', '<leader>tb', gitsigns.toggle_current_line_blame)
-      map('n', '<leader>tw', gitsigns.toggle_word_diff)
+      map('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = "Gitsigns: toggle wether to show git blame information on the current line" })
+      map('n', '<leader>tw', gitsigns.toggle_word_diff, { desc = "Gitsigns: toggle showing diff inline" })
 
       -- Text object
-      map({'o', 'x'}, 'ih', gitsigns.select_hunk)
+      map({'o', 'x'}, 'ih', gitsigns.select_hunk, { desc = "Gitsigns: current hunk as text object" })
     end
 }
 

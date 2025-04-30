@@ -34,3 +34,5 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.o.background = "dark"
+
+vim.loader.enable = true
