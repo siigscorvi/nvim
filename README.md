@@ -30,10 +30,21 @@ nix run github:siigscorvi/nvim --
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
 - [ ] whichkey.nvim 
+- [ ] lazyloading...?
 
 completion and snippets
 - [x] blink.cmp
-- [ ] [additional sources for blink](https://cmp.saghen.dev/configuration/sources#community-sources)
+    - [x config
+- [x] recipes:
+    - [x] nvim-web-devicons + lspkind as icons
+    - [x] Select Nth item from list
+    - [x] first letter capitalization on buffer source
+- [x] [additional sources for blink](https://cmp.saghen.dev/configuration/sources#community-sources)
+    - [x] emoji
+    - [x] nerdfont
+    - [x] git conventional commits
+    - [ ] snippets
+    - [ ] lsp
 - [ ] LuaSnip
 - [ ] create Luasnippets
 
@@ -71,7 +82,7 @@ Styling
 - [x] gruvbox colorscheme
 - [x] floating commandline
 - [x] good looking messages / notifications
-- [ ] greeter
+- [ ] greeter?
 - [ ] bufferline
 
 ## Bookmarks for future plugins
@@ -79,4 +90,5 @@ Styling
 - yanky.nvim (with telescope integr.)
 - cheatsheet-nvim
 - telescope-menu.nvim
-
+- blink-copilot for copilot or supermaven with blink-cmp-supermaven?
+- cmp-pandoc-references pandoc blink source

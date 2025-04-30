@@ -37,6 +37,7 @@ let
       nix
       printf
       python
+      regex
       requirements
       sql
       ssh_config
@@ -53,6 +54,10 @@ in
 
 # editing support
     blink-cmp
+    blink-emoji-nvim
+    blink-nerdfont-nvim
+    blink-cmp-conventional-commits
+    lspkind-nvim
     gitsigns-nvim
   
 
