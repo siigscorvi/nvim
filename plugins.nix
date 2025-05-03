@@ -59,6 +59,11 @@ in
     blink-cmp-conventional-commits
     gitsigns-nvim
 
+    mini-ai
+    mini-pairs
+    mini-splitjoin
+    mini-surround
+
 
 # code analysis
     (nvim-treesitter.withPlugins treesitter)
@@ -70,6 +75,7 @@ in
     telescope-fzf-native-nvim # fuzzy finder implementation for telescope
     telescope-file-browser-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
+    mini-bufremove
 
 
 # terminal navigation
@@ -87,6 +93,10 @@ in
     nui-nvim
     nvim-notify
     noice-nvim
+
+    mini-cursorword
+    mini-indentscope
+    mini-trailspace
 
 
 # misc

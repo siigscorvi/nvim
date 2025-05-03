@@ -23,18 +23,19 @@ nix run github:siigscorvi/nvim --
 - grammar lsp for english and german
 - snippets
 - table editing
-- images
+- [x]images
 - surround for text style
 
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
-- [ ] whichkey.nvim 
+- [x] whichkey.nvim 
 - [ ] lazyloading...?
+- [x] snacks
+- [x] mini
 
 completion and snippets
 - [x] blink.cmp
-    - [x config
 - [x] recipes:
     - [x] nvim-web-devicons + lspkind as icons
     - [x] Select Nth item from list
@@ -51,22 +52,23 @@ completion and snippets
 editing helpers
 - [x] git integration
 - [ ] trouble.nvim
-- [ ] indent guides
+- [x] indent guides
 - [ ] easy, good looking folds
-- [ ] autopairs / surround
+- [x] autopairs / surround
+- [ ] comments
 - [ ] autoformating
 
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
 - [ ] lsp
+    - [ ] nix
+    - [ ] lua
+    - [ ] LaTeX
+    - [ ] grammar
+    - [ ] C and C++
+    - [ ] bash
+    - [ ] Python and Jupyter
 - [ ] linter
-- [ ] nix
-- [ ] lua
-- [ ] LaTeX
-- [ ] grammar
-- [ ] C and C++
-- [ ] bash
-- [ ] Python and Jupyter
  
 navigation
 - [x] tmux compatibility
