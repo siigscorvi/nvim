@@ -66,7 +66,7 @@ in
 
 # file navigation
     plenary-nvim # dependency for telescope
-    telescope-nvim 
+    telescope-nvim
     telescope-fzf-native-nvim # fuzzy finder implementation for telescope
     telescope-file-browser-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
@@ -81,11 +81,15 @@ in
 
     nvim-web-devicons
     lspkind-nvim
-    
+
     which-key-nvim
 
     nui-nvim
     nvim-notify
     noice-nvim
+
+
+# misc
+    snacks-nvim
 
   ]
