@@ -34,5 +34,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.o.background = "dark"
+-- vim.o.winborder = "rounded" enabling this broke almost all my windows. Possibly wait for wider adoption before reenabling
 
 vim.loader.enable = true
