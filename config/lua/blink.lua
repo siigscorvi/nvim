@@ -58,7 +58,7 @@ require("blink.cmp").setup({
             highlight = function(ctx)
               local hl = ctx.kind_hl
               if vim.tbl_contains({ "Path" }, ctx.source_name) then
-                  local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
+                local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
                 if dev_icon then
                   hl = dev_hl
                 end
