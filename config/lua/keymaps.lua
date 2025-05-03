@@ -12,3 +12,8 @@ vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy to clipboard with Y" })
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete to void" })
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "replace word under cursor in whole buffer" })
+
+vim.keymap.set("v", "<C-h>", "<gv")
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<C-l>", ">gv")
