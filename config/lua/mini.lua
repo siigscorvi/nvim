@@ -7,6 +7,16 @@ local bufremove = require("mini.bufremove")
 bufremove.setup() -- TODO do i need to create a keymap?
 
 require('mini.cursorword').setup()
+
+vim.api.nvim_set_hl(0, 'MiniCursorword', {
+  underline = false,
+  bg        = '#504945',
+})
+vim.api.nvim_set_hl(0, 'MiniCursorwordCurrent', {
+  underline = false,
+  bg        = '#504945',
+})
+
 require('mini.indentscope').setup()
 
 local trails = require("mini.trailspace")
@@ -20,11 +30,10 @@ vim.keymap.set("n", "<leader>tl", function() trails.trim_last_lines() end, { des
 
 
 
--- test
+-- requiring harpoon here as a quickfix for the loading problems
 local harpoon = require('harpoon')
 harpoon:setup({})
 
--- basic telescope configuration
 vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, { desc = "Harpoon: add buffer to list" })
 vim.keymap.set("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "Harpoon: show harpoon menu" })
 

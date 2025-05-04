@@ -50,13 +50,14 @@ completion and snippets
 - [ ] create Luasnippets
 
 editing helpers
-- [x] git integration
+- [x] git integration with gitsigns and lazygit
 - [ ] trouble.nvim
 - [x] indent guides
 - [ ] easy, good looking folds
 - [x] autopairs / surround
-- [ ] comments
+- [ ] comments highlighting (maybe this is available in trouble..?)
 - [ ] autoformating
+- [ ] show colors in buffer
 
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
@@ -69,7 +70,7 @@ code analysis, language servers and linters
     - [ ] bash
     - [ ] Python and Jupyter
 - [ ] linter
- 
+
 navigation
 - [x] tmux compatibility
 
@@ -77,15 +78,14 @@ easy file navigation and manipulation
 - [x] file browser to create, move, copy, rename, delete files
 - [x] telescope integration
 - [x] telescope extensions
-- [ ] easy moving when editing multiple files
-- [ ]
+- [x] easy moving when editing multiple files
 
 Styling
 - [x] gruvbox colorscheme
 - [x] floating commandline
 - [x] good looking messages / notifications
-- [ ] greeter?
-- [ ] bufferline
+- [ ] greeter...?
+- [ ] lualine
 
 ## Bookmarks for future plugins
 - telescope-manix
