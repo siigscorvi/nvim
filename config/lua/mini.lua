@@ -4,17 +4,17 @@ require('mini.splitjoin').setup()
 require('mini.surround').setup()
 
 local bufremove = require("mini.bufremove")
-bufremove.setup() -- TODO do i need to create a keymap?
+bufremove.setup()
 
 require('mini.cursorword').setup()
 
 vim.api.nvim_set_hl(0, 'MiniCursorword', {
   underline = false,
-  bg        = '#504945',
+  bg        = '#3c3836',
 })
 vim.api.nvim_set_hl(0, 'MiniCursorwordCurrent', {
   underline = false,
-  bg        = '#504945',
+  bg        = '#3c3836',
 })
 
 require('mini.indentscope').setup()
