@@ -1,6 +1,6 @@
 { pkgs }:
 {
-  deps = with pkgs; [ 
+  deps = with pkgs; [
     # telescope
     ripgrep
     fd
@@ -12,5 +12,9 @@
 
     # lazygit
     lazygit
+  ];
+
+  lsps = with pkgs; [
+    lua-language-server
   ];
 }

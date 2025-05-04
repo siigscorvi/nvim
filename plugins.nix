@@ -68,6 +68,7 @@ in
 
 
 # code analysis
+    nvim-lspconfig
     (nvim-treesitter.withPlugins treesitter)
 
 

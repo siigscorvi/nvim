@@ -7,7 +7,8 @@ let
   runtimeDeps = import ../runtimeDeps.nix { inherit pkgs; };
 
   # for each deps*X* variable I add, I need to add one of these here:
-  rdeps       = pkgs.symlinkJoin { name = "neovim Runtime Dependencies"; paths = runtimeDeps.deps; };
+  rdeps       = pkgs.symlinkJoin { name = "Neovim Runtime Dependencies"; paths = runtimeDeps.deps; };
+  lsps        = pkgs.symlinkJoin { name = "Neovim Language Servers"; paths = runtimeDeps.lsps; };
 
   # This wraps the default neovim package with my extensions
   myNeovimUnwrapped = pkgs.wrapNeovim pkgs.neovim {
@@ -18,10 +19,10 @@ let
   };
 
 # This write the packages as an actual application
-in 
+in
   pkgs.writeShellApplication {
     name = "nvim";
-    runtimeInputs = [ rdeps ];
+    runtimeInputs = [ rdeps lsps ];
     text = ''
       ${myNeovimUnwrapped}/bin/nvim "$@"
     '';
