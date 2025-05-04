@@ -64,6 +64,8 @@ in
     mini-splitjoin
     mini-surround
 
+    lazygit-nvim
+
 
 # code analysis
     (nvim-treesitter.withPlugins treesitter)

@@ -6,8 +6,4 @@ Snacks.setup({
     enabled = true,
     doc = { inline = false, float = true, },
   },
-
-  lazygit = { enabled = true, configure = true, },
 })
-
-vim.keymap.set("n", "<leader>lg", function() Snacks.lazygit() end, { desc = "Snacks: open lazygit" })
