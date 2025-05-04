@@ -12,8 +12,23 @@ require('mini.indentscope').setup()
 local trails = require("mini.trailspace")
 trails.setup()
 
-vim.keymap.set("n", "<leader>bd", function() bufremove.unshow() end, { desc = "delete buffer" })
+vim.keymap.set("n", "<leader>bd", function() bufremove.unshow() end, { desc = "Mini: delete buffer" })
 
-vim.keymap.set("n", "<leader>tr", function() trails.trim() end, { desc = "Trim all trailing whitespaces"})
+vim.keymap.set("n", "<leader>tr", function() trails.trim() end, { desc = "Mini: Trim all trailing whitespaces"})
 
-vim.keymap.set("n", "<leader>tl", function() trails.trim_last_lines() end, { desc = "Trim all trailing empty lines"})
+vim.keymap.set("n", "<leader>tl", function() trails.trim_last_lines() end, { desc = "Mini: Trim all trailing empty lines"})
+
+
+
+-- test
+local harpoon = require('harpoon')
+harpoon:setup({})
+
+-- basic telescope configuration
+vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, { desc = "Harpoon: add buffer to list" })
+vim.keymap.set("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "Harpoon: show harpoon menu" })
+
+vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end, { desc = "Harpoon: select 1st item in harpoon list" })
+vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end, { desc = "Harpoon: select 2nd item in harpoon list" })
+vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end, { desc = "Harpoon: select 3rd item in harpoon list" })
+vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end, { desc = "Harpoon: select 4th item in harpoon list" })

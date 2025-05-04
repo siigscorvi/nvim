@@ -1,7 +1,7 @@
 { pkgs }:
 # List all the plugins I need here
-let 
-  treesitter = p: with p; [ 
+let
+  treesitter = p: with p; [
       asm
       bash
       bibtex
@@ -76,10 +76,7 @@ in
     telescope-file-browser-nvim
     # telescope-lua-snip-nvim # waiting for luasnip
     mini-bufremove
-
-
-# terminal navigation
-    tmux-nvim
+    harpoon2
 
 
 # styling
@@ -101,5 +98,6 @@ in
 
 # misc
     snacks-nvim
+    tmux-nvim
 
   ]
