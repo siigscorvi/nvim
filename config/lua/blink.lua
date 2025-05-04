@@ -135,7 +135,7 @@ require("blink.cmp").setup({
         score_offset = 15,
         opts = { insert = true },
         enabled = function()
-          return vim.tbl_contains( { "gitcommit", "markdown", "nix" }, vim.o.filetype)
+          return vim.tbl_contains( { "gitcommit", "markdown" }, vim.o.filetype)
         end,
       },
 
@@ -144,6 +144,9 @@ require("blink.cmp").setup({
         name = "Nerd Fonts",
         score_offset = 10,
         opts = { insert = true },
+        enabled = function()
+          return vim.tbl_contains( { "gitcommit", "markdown" }, vim.o.filetype)
+        end,
       },
 
       conventional_commits = {
