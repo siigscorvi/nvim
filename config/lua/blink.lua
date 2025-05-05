@@ -88,7 +88,7 @@ require("blink.cmp").setup({
 
   sources = {
     default = {
-      'path', 'buffer', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', -- 'lsp', 'snippets',
+      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', -- 'lsp', 'snippets',
     },
     providers = {
 

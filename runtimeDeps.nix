@@ -16,5 +16,7 @@
 
   lsps = with pkgs; [
     lua-language-server
+    nixd
+    nixfmt-classic
   ];
 }
