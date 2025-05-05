@@ -72,6 +72,9 @@ in
     (nvim-treesitter.withPlugins treesitter)
 
 
+    ltex_extra-nvim
+
+
 # file navigation
     plenary-nvim # dependency for telescope
     telescope-nvim

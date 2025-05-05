@@ -18,5 +18,6 @@
     lua-language-server
     nixd
     nixfmt-classic
+    ltex-ls-plus
   ];
 }

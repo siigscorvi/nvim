@@ -78,6 +78,18 @@ local servers = {
       },
     },
   },
+
+  --- ltex-ls-plus
+  ltex_plus = {
+    on_attach = function ()
+      require("ltex_extra").setup({
+        load_langs = { "en-US", "de-DE" }
+      })
+    end,
+    settings = {
+
+    },
+  },
 }
 
 --- apply config and enable all servers ---

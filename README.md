@@ -1,5 +1,6 @@
-# My neovim configuration flake
-The flake setup is mostly stolem from [this guide](https://primamateria.github.io/blog/neovim-nix/).
+[comment]: <> "LTeX: enabled=false"
+# My Neovim configuration flake
+The flake setup is mostly stolen from [this guide](https://primamateria.github.io/blog/neovim-nix/).
 
 You can try my config by running:
 ```bash
@@ -11,7 +12,7 @@ nix run github:siigscorvi/nvim --
 - easy file navigation
 - language servers
 - syntax highlighting, code analysis, style linting
-- completion for lsp, snippets, ...
+- completion for LSP, snippets, etc.
 - formatting
 - git integration (at least highlighting of changes)
 - tmux compatibility for my setup
@@ -20,7 +21,7 @@ nix run github:siigscorvi/nvim --
 ### Language specific
 #### Markdown
 - inline preview and in browser
-- grammar lsp for english and german
+- grammar LSP for English and German
 - snippets
 - table editing
 - [x] images
@@ -28,7 +29,7 @@ nix run github:siigscorvi/nvim --
 
 ## Progress
 - [x] init.lua for basic nvim options
-- [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
+- [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins which otherwise wouldn't need their own file)
 - [x] whichkey.nvim
 - [ ] lazyloading...?
 - [x] snacks
@@ -52,7 +53,7 @@ editing helpers
 - [ ] undotree
 - [ ] trouble.nvim
 - [x] indent guides
-- [ ] easy, good looking folds
+- [ ] easy, good-looking folds
 - [x] autopairs / surround
 - [ ] comments highlighting (maybe this is available in trouble..?)
 
@@ -66,15 +67,16 @@ code analysis, language servers and linters
 | nix                  | [x] | [x]       | [ ]     | [ ]      |
 | lua                  | [x] | [x]       | [ ]     | [ ]      |
 | LaTeX                | [ ] | [ ]       | [ ]     | [ ]      |
-| grammar              | [ ] | [ ]       | [ ]     | [ ]      |
+| markdown             | [ ] | [ ]       | [ ]     | [ ]      |
+| grammar              | [x] | [ ]       | [ ]     | [ ]      |
 | C and C++            | [ ] | [ ]       | [ ]     | [ ]      |
 | bash                 | [ ] | [ ]       | [ ]     | [ ]      |
 | Python and Jupyter   | [ ] | [ ]       | [ ]     | [ ]      |
 
-navigation
+Navigation
 - [x] tmux compatibility
 
-easy file navigation and manipulation
+Easy file navigation and manipulation
 - [x] file browser to create, move, copy, rename, delete files
 - [x] telescope integration
 - [x] telescope extensions
