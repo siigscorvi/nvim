@@ -62,16 +62,16 @@ editing helpers
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
 
-| language             | lsp | formatter | linter? | snippets |
-| ---                  | --- | ---       | ---     | ---      |
-| nix                  | [x] | [x]       | [ ]     | [ ]      |
-| lua                  | [x] | [x]       | [ ]     | [ ]      |
-| LaTeX                | [ ] | [ ]       | [ ]     | [ ]      |
-| markdown             | [ ] | [ ]       | [ ]     | [ ]      |
-| grammar              | [x] | [ ]       | [ ]     | [ ]      |
-| C and C++            | [ ] | [ ]       | [ ]     | [ ]      |
-| bash                 | [ ] | [ ]       | [ ]     | [ ]      |
-| Python and Jupyter   | [ ] | [ ]       | [ ]     | [ ]      |
+| language             | lsp   | formatter | linter? | snippets |
+| ---                  | ---   | ---       | ---     | ---      |
+| nix                  | - [x] | - [x]     | - [ ]   | - [ ]    |
+| lua                  | - [x] | - [x]     | - [ ]   | - [ ]    |
+| LaTeX                | - [ ] | - [ ]     | - [ ]   | - [ ]    |
+| markdown             | - [ ] | - [ ]     | - [ ]   | - [ ]    |
+| grammar              | - [x] | - [ ]     | - [ ]   | - [ ]    |
+| C and C++            | - [ ] | - [ ]     | - [ ]   | - [ ]    |
+| bash                 | - [ ] | - [ ]     | - [ ]   | - [ ]    |
+| Python and Jupyter   | - [ ] | - [ ]     | - [ ]   | - [ ]    |
 
 Navigation
 - [x] tmux compatibility
