@@ -3,7 +3,7 @@ The flake setup is mostly stolem from [this guide](https://primamateria.github.i
 
 You can try my config by running:
 ```bash
-nix run github:siigscorvi/nvim -- 
+nix run github:siigscorvi/nvim --
 ```
 
 # Neovim configuration
@@ -23,13 +23,13 @@ nix run github:siigscorvi/nvim --
 - grammar lsp for english and german
 - snippets
 - table editing
-- [x]images
+- [x] images
 - surround for text style
 
 ## Progress
 - [x] init.lua for basic nvim options
 - [x] keymaps.lua for my keymaps as well as plugin specific keymaps (for plugins whicht otherwise wouldn't need their own file)
-- [x] whichkey.nvim 
+- [x] whichkey.nvim
 - [ ] lazyloading...?
 - [x] snacks
 - [x] mini
@@ -45,31 +45,31 @@ completion and snippets
     - [x] nerdfont
     - [x] git conventional commits
     - [ ] snippets
-    - [ ] lsp
-- [ ] LuaSnip
-- [ ] create Luasnippets
+    - [x] lsp
 
 editing helpers
 - [x] git integration with gitsigns and lazygit
+- [ ] undotree
 - [ ] trouble.nvim
 - [x] indent guides
 - [ ] easy, good looking folds
 - [x] autopairs / surround
 - [ ] comments highlighting (maybe this is available in trouble..?)
-- [ ] autoformating
+
 - [ ] show colors in buffer
 
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
-- [ ] lsp
-    - [ ] nix
-    - [ ] lua
-    - [ ] LaTeX
-    - [ ] grammar
-    - [ ] C and C++
-    - [ ] bash
-    - [ ] Python and Jupyter
-- [ ] linter
+
+| language             | lsp | formatter | linter? | snippets |
+| ---                  | --- | ---       | ---     | ---      |
+| nix                  | [x] | [x]       | [ ]     | [ ]      |
+| lua                  | [x] | [x]       | [ ]     | [ ]      |
+| LaTeX                | [ ] | [ ]       | [ ]     | [ ]      |
+| grammar              | [ ] | [ ]       | [ ]     | [ ]      |
+| C and C++            | [ ] | [ ]       | [ ]     | [ ]      |
+| bash                 | [ ] | [ ]       | [ ]     | [ ]      |
+| Python and Jupyter   | [ ] | [ ]       | [ ]     | [ ]      |
 
 navigation
 - [x] tmux compatibility
@@ -84,6 +84,7 @@ Styling
 - [x] gruvbox colorscheme
 - [x] floating commandline
 - [x] good looking messages / notifications
+- [ ] smearcursor
 - [ ] greeter...?
 - [ ] lualine
 
