@@ -21,20 +21,21 @@
       overlayFlakeInputs = final: prev: {
         vimPlugins = prev.vimPlugins // {
 
-          telescope-luasnip-nvim = import ./packages/vimPlugins/telescope-luasnip-nvim.nix {
-            src = telescope-luasnip-nvim;
-            pkgs = prev;
-          };
+          telescope-luasnip-nvim =
+            import ./packages/vimPlugins/telescope-luasnip-nvim.nix {
+              src = telescope-luasnip-nvim;
+              pkgs = prev;
+            };
 
         };
       };
 
       overlays = [
         overlayFlakeInputs
-        neovim.overlays.default 
+        neovim.overlays.default
         (final: prev: {
           myNeovim = import ./packages/myNeovim.nix { pkgs = final; };
-          })
+        })
       ];
 
       pkgs = import nixpkgs {
