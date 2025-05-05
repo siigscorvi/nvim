@@ -16,8 +16,13 @@
 
   lsps = with pkgs; [
     lua-language-server
+
     nixd
     nixfmt-classic
+
     ltex-ls-plus
+    texlab
+    texliveBasic
+
   ];
 }

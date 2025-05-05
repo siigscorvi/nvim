@@ -81,13 +81,22 @@ local servers = {
 
   --- ltex-ls-plus
   ltex_plus = {
-    on_attach = function ()
+    on_attach = function()
       require("ltex_extra").setup({
         load_langs = { "en-US", "de-DE" }
       })
     end,
-    settings = {
+  },
 
+  texlab = {
+    build = {
+      args = {
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-pv",
+        "%f"
+      }
     },
   },
 }

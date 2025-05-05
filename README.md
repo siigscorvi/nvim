@@ -66,7 +66,7 @@ code analysis, language servers and linters
 | ---                  | --- | ---       | ---     | ---      |
 | nix                  | [x] | [x]       | [ ]     | [ ]      |
 | lua                  | [x] | [x]       | [ ]     | [ ]      |
-| LaTeX                | [ ] | [ ]       | [ ]     | [ ]      |
+| LaTeX                | [x] | [ ]       | [ ]     | [ ]      |
 | markdown             | [ ] | [ ]       | [ ]     | [ ]      |
 | grammar              | [x] | [ ]       | [ ]     | [ ]      |
 | C and C++            | [ ] | [ ]       | [ ]     | [ ]      |
