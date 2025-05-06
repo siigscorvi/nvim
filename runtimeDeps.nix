@@ -22,7 +22,8 @@
 
     ltex-ls-plus
     texlab
-    texliveBasic
+    texliveFull
+    zathura
 
   ];
 }
