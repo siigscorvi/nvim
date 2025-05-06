@@ -71,11 +71,10 @@ in
     nvim-lspconfig
     (nvim-treesitter.withPlugins treesitter)
 
-
     ltex_extra-nvim
 
 
-# file navigation
+# navigation
     plenary-nvim # dependency for telescope
     telescope-nvim
     telescope-fzf-native-nvim # fuzzy finder implementation for telescope
@@ -83,6 +82,8 @@ in
     # telescope-lua-snip-nvim # waiting for luasnip
     mini-bufremove
     harpoon2
+
+    tmux-nvim
 
 
 # styling
@@ -104,6 +105,9 @@ in
 
 # misc
     snacks-nvim
-    tmux-nvim
+
+
+# latex
+    vimtex
 
   ]
