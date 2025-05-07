@@ -27,7 +27,7 @@ require("blink.cmp").setup({
 
   completion = {
     documentation = { auto_show = true, auto_show_delay_ms = 500 },
-    ghost_text = { enabled = true },
+    -- ghost_text = { enabled = true },
 
     menu = {
       draw = {
@@ -88,7 +88,7 @@ require("blink.cmp").setup({
 
   sources = {
     default = {
-      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', -- 'lsp', 'snippets',
+      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', -- 'snippets',
     },
     providers = {
 
@@ -126,7 +126,7 @@ require("blink.cmp").setup({
             end
           end
           return out
-        end
+        end,
       },
 
       emoji = {
