@@ -79,15 +79,6 @@ local servers = {
     },
   },
 
-  --- ltex-ls-plus
-  ltex_plus = {
-    on_attach = function()
-      require("ltex_extra").setup({
-        load_langs = { "en-US", "de-DE" }
-      })
-    end,
-  },
-
   texlab = {
     build = {
       args = {
@@ -106,3 +97,17 @@ for server, opts in pairs(servers) do
   vim.lsp.config(server, opts)
   vim.lsp.enable(server)
 end
+
+
+--- extra config for ltex_ls_plus, because I want to be able enable it when I want to
+vim.keymap.set("n", "<leader>ltx", function ()
+  vim.lsp.config('ltex_plus', {
+    on_attach = function()
+      require("ltex_extra").setup({
+        load_langs = { "en-US", "de-DE" }
+      })
+    end,
+  })
+  vim.lsp.enable('ltex_plus')
+end)
+
