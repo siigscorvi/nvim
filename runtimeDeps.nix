@@ -25,5 +25,6 @@
     texliveFull
     zathura
 
+    basedpyright
   ];
 }

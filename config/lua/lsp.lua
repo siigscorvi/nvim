@@ -80,16 +80,10 @@ local servers = {
   },
 
   texlab = {
-    build = {
-      args = {
-        "-pdf",
-        "-interaction=nonstopmode",
-        "-synctex=1",
-        "-pv",
-        "%f"
-      }
-    },
+    build = { args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-pv", "%f" } },
   },
+
+  basedpyright = { },
 }
 
 --- apply config and enable all servers ---
@@ -100,7 +94,7 @@ end
 
 
 --- extra config for ltex_ls_plus, because I want to be able enable it when I want to
-vim.keymap.set("n", "<leader>ltx", function ()
+vim.keymap.set("n", "<leader>ltx", function()
   vim.lsp.config('ltex_plus', {
     on_attach = function()
       require("ltex_extra").setup({
@@ -110,4 +104,3 @@ vim.keymap.set("n", "<leader>ltx", function ()
   })
   vim.lsp.enable('ltex_plus')
 end)
-
