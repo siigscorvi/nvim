@@ -27,7 +27,7 @@ require("blink.cmp").setup({
 
   completion = {
     documentation = { auto_show = true, auto_show_delay_ms = 500 },
-    -- ghost_text = { enabled = true },
+    ghost_text = { enabled = true },
 
     menu = {
       draw = {
@@ -42,14 +42,17 @@ require("blink.cmp").setup({
             text = function(ctx)
               local lspkind = require("lspkind")
               local icon = ctx.kind_icon
+              if ctx.source_name == "copilot" then
+                return ctx.kind_icon .. ctx.icon_gap
+              end
               if vim.tbl_contains({ "Path" }, ctx.source_name) then
                 local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
                 if dev_icon then
-                    icon = dev_icon
+                  icon = dev_icon
                 end
               else
                 icon = require("lspkind").symbolic(ctx.kind, {
-                    mode = "symbol",
+                  mode = "symbol",
                 })
               end
               return icon .. ctx.icon_gap
@@ -88,16 +91,16 @@ require("blink.cmp").setup({
 
   sources = {
     default = {
-      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', -- 'snippets',
+      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', 'copilot', --- 'snippets',
     },
     providers = {
 
       buffer = {
         enabled = function()
-          return vim.tbl_contains( { "gitcommit", "markdown", "tex" }, vim.o.filetype)
+          return vim.tbl_contains({ "gitcommit", "markdown", "tex" }, vim.o.filetype)
         end,
         -- keep case of first char
-        transform_items = function (a, items)
+        transform_items = function(a, items)
           local keyword = a.get_keyword()
           local correct, case
           if keyword:match('^%l') then
@@ -116,7 +119,7 @@ require("blink.cmp").setup({
           for _, item in ipairs(items) do
             local raw = item.insertText
             if raw:match(correct) then
-              local text = case(raw:sub(1,1)) .. raw:sub(2)
+              local text = case(raw:sub(1, 1)) .. raw:sub(2)
               item.insertText = text
               item.label = text
             end
@@ -135,7 +138,7 @@ require("blink.cmp").setup({
         score_offset = 15,
         opts = { insert = true },
         enabled = function()
-          return vim.tbl_contains( { "gitcommit", "markdown" }, vim.o.filetype)
+          return vim.tbl_contains({ "gitcommit", "markdown" }, vim.o.filetype)
         end,
       },
 
@@ -145,7 +148,7 @@ require("blink.cmp").setup({
         score_offset = 10,
         opts = { insert = true },
         enabled = function()
-          return vim.tbl_contains( { "gitcommit", "markdown" }, vim.o.filetype)
+          return vim.tbl_contains({ "gitcommit", "markdown" }, vim.o.filetype)
         end,
       },
 
@@ -154,12 +157,17 @@ require("blink.cmp").setup({
         name = 'Conventional Commits',
         score_offset = 20,
         enabled = function()
-            return vim.bo.filetype == 'gitcommit'
+          return vim.bo.filetype == 'gitcommit'
         end,
         opts = {},
       },
 
-
+      copilot = {
+        name = "copilot",
+        module = "blink-copilot",
+        score_offset = 100,
+        async = true,
+      },
     },
   },
 

@@ -59,13 +59,15 @@ in
     blink-cmp-conventional-commits
     gitsigns-nvim
 
+    copilot-lua
+    blink-copilot
+
     mini-ai
     mini-pairs
     mini-splitjoin
     mini-surround
 
     lazygit-nvim
-
 
 # code analysis
     nvim-lspconfig

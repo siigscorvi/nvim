@@ -12,6 +12,9 @@
 
     # lazygit
     lazygit
+
+    # copilot
+    nodejs-slim_latest
   ];
 
   lsps = with pkgs; [
