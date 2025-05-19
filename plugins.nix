@@ -104,6 +104,8 @@ in
     mini-indentscope
     mini-trailspace
 
+    lualine-nvim
+    copilot-lualine
 
 # misc
     snacks-nvim
