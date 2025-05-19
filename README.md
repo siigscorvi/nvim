@@ -47,6 +47,7 @@ completion and snippets
     - [x] git conventional commits
     - [ ] snippets
     - [x] lsp
+- [x] copilot
 
 editing helpers
 - [x] git integration with gitsigns and lazygit
@@ -71,7 +72,7 @@ code analysis, language servers and linters
 | grammar              | [x] | [ ]       | [ ]     | [ ]      |
 | C and C++            | [ ] | [ ]       | [ ]     | [ ]      |
 | bash                 | [ ] | [ ]       | [ ]     | [ ]      |
-| Python and Jupyter   | [ ] | [ ]       | [ ]     | [ ]      |
+| Python and Jupyter   | [x] | [ ]       | [ ]     | [ ]      |
 
 Navigation
 - [x] tmux compatibility
@@ -88,7 +89,7 @@ Styling
 - [x] good looking messages / notifications
 - [ ] smearcursor
 - [ ] greeter...?
-- [ ] lualine
+- [x] lualine
 
 ## Bookmarks for future plugins
 - telescope-manix
