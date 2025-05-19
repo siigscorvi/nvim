@@ -4,9 +4,16 @@ require('lualine').setup({
     theme = 'gruvbox-material',
   },
   sections = {
-    lualine_a = { 'mode' },
+    lualine_a = {
+      {
+        function()
+          return '🚀'
+        end,
+      },
+      'mode'
+    },
     lualine_b = { 'branch', 'diff',
-      { 'diagnostics', symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' }, },
+      { 'diagnostics', symbols = { error = '🚨', warn = '🚧', info = '🐢', hint = '🗿' }, },
     },
 
     lualine_c = {
@@ -19,7 +26,7 @@ require('lualine').setup({
     },
 
     lualine_x = {
-      { 'lsp_status', icon = '', ignore_lsp = {'ltex_plus', 'copilot'} },
+      { 'lsp_status', icon = '⚡', ignore_lsp = { 'ltex_plus', 'copilot' } },
       { 'copilot', show_colors = true, show_loading = true },
     },
 
