@@ -53,8 +53,6 @@ in
 # debugging
 
 # editing support
-    minuet-ai-nvim
-
     blink-cmp
     blink-emoji-nvim
     blink-nerdfont-nvim
