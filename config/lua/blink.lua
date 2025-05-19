@@ -91,7 +91,7 @@ require("blink.cmp").setup({
 
   sources = {
     default = {
-      'path', 'buffer', 'lsp', 'cmdline', 'emoji', 'nerdfont', 'conventional_commits', 'copilot', --- 'snippets',
+      'path', 'buffer', 'lsp', 'cmdline', 'copilot', --- 'snippets',
     },
     providers = {
 
@@ -130,36 +130,6 @@ require("blink.cmp").setup({
           end
           return out
         end,
-      },
-
-      emoji = {
-        module = "blink-emoji",
-        name = "Emoji",
-        score_offset = 15,
-        opts = { insert = true },
-        enabled = function()
-          return vim.tbl_contains({ "gitcommit", "markdown" }, vim.o.filetype)
-        end,
-      },
-
-      nerdfont = {
-        module = "blink-nerdfont",
-        name = "Nerd Fonts",
-        score_offset = 10,
-        opts = { insert = true },
-        enabled = function()
-          return vim.tbl_contains({ "gitcommit", "markdown" }, vim.o.filetype)
-        end,
-      },
-
-      conventional_commits = {
-        module = 'blink-cmp-conventional-commits',
-        name = 'Conventional Commits',
-        score_offset = 20,
-        enabled = function()
-          return vim.bo.filetype == 'gitcommit'
-        end,
-        opts = {},
       },
 
       copilot = {
