@@ -12,6 +12,9 @@
 
     # lazygit
     lazygit
+
+    # ai
+    ollama
   ];
 
   lsps = with pkgs; [
