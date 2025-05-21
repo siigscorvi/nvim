@@ -4,24 +4,19 @@ require('lualine').setup({
     theme = 'gruvbox-material',
   },
   sections = {
-    lualine_a = {
-      {
-        function()
-          return '🚀'
-        end,
-      },
-      'mode'
-    },
+    lualine_a = { 'mode' },
     lualine_b = { 'branch', 'diff',
-      { 'diagnostics', symbols = { error = '🚨', warn = '🚧', info = '🐢', hint = '🗿' }, },
+      { 'diagnostics', symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' }, },
     },
 
     lualine_c = {
       'filename',
       {
-        require("noice").api.statusline.mode.get,
-        cond = require("noice").api.statusline.mode.has,
-        color = { fg = "#ff9e64" },
+        function ()
+          local reg = vim.fn.reg_recording()
+          if reg == "" then return "" end -- not recording
+          return "rec @" .. reg
+        end
       }
     },
 
