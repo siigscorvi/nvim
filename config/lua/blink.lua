@@ -7,6 +7,7 @@ require("blink.cmp").setup({
   keymap = {
     preset = 'default',
     ["<C-Z>"] = { "accept", "fallback" }, -- also let me accept with strg-z
+    ["<Right>"] = { "accept", "fallback" }, -- also let me accept with strg-z
     ["<C-C>"] = { "cancel", "fallback" }, -- also let me cancel with strg-c
 
     ['<A-1>'] = { function(cmp) cmp.accept({ index = 1 }) end },
