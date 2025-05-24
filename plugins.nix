@@ -63,6 +63,8 @@ in
     mini-splitjoin
     mini-surround
 
+    undotree
+
     lazygit-nvim
     gitsigns-nvim
 
