@@ -51,10 +51,10 @@ completion and snippets
 
 editing helpers
 - [x] git integration with gitsigns and lazygit
-- [ ] undotree
+- [x] undotree
 - [x] trouble.nvim
 - [x] indent guides
-- [ ] easy, good-looking folds
+- [x] easy, good-looking folds
 - [x] autopairs / surround
 - [x] comments highlighting (maybe this is available in trouble..?)
 

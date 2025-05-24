@@ -112,6 +112,9 @@ in
     lualine-nvim
     copilot-lualine
 
+    promise-async
+    nvim-ufo
+
 # misc
     snacks-nvim
 
