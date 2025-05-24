@@ -57,10 +57,6 @@ in
     blink-emoji-nvim
     blink-nerdfont-nvim
     blink-cmp-conventional-commits
-    gitsigns-nvim
-
-    copilot-lua
-    blink-copilot
 
     mini-ai
     mini-pairs
@@ -68,6 +64,13 @@ in
     mini-surround
 
     lazygit-nvim
+    gitsigns-nvim
+
+    copilot-lua
+    blink-copilot
+
+    trouble-nvim
+    todo-comments-nvim
 
 # code analysis
     nvim-lspconfig

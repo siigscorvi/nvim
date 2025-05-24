@@ -52,11 +52,11 @@ completion and snippets
 editing helpers
 - [x] git integration with gitsigns and lazygit
 - [ ] undotree
-- [ ] trouble.nvim
+- [x] trouble.nvim
 - [x] indent guides
 - [ ] easy, good-looking folds
 - [x] autopairs / surround
-- [ ] comments highlighting (maybe this is available in trouble..?)
+- [x] comments highlighting (maybe this is available in trouble..?)
 
 - [ ] show colors in buffer
 
