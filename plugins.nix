@@ -115,6 +115,8 @@ in
     promise-async
     nvim-ufo
 
+    smear-cursor-nvim
+
 # misc
     snacks-nvim
 

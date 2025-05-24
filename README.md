@@ -87,7 +87,7 @@ Styling
 - [x] gruvbox colorscheme
 - [x] floating commandline
 - [x] good looking messages / notifications
-- [ ] smearcursor
+- [x] smearcursor
 - [ ] greeter...?
 - [x] lualine
 
