@@ -15,6 +15,9 @@
 
     # copilot
     nodejs-slim_latest
+
+    # pdf viewer
+    zathura
   ];
 
   lsps = with pkgs; [
@@ -26,7 +29,13 @@
     ltex-ls-plus
     texlab
     texliveFull
-    zathura
+
+    marksman
+
+    clang-tools
+    cmake-language-server
+
+    bash-language-server
 
     basedpyright
   ];

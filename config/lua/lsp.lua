@@ -84,6 +84,11 @@ local servers = {
   },
 
   basedpyright = { },
+  marksman = { },
+  clangd = { },
+  bashls = { },
+  cmake = { },
+
 }
 
 --- apply config and enable all servers ---
