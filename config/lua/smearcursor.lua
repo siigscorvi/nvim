@@ -1,1 +1,1 @@
-require("smear_cursor").setup()
+-- require("smear_cursor").setup()
