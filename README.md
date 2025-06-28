@@ -58,7 +58,7 @@ editing helpers
 - [x] autopairs / surround
 - [x] comments highlighting (maybe this is available in trouble..?)
 
-- [ ] show colors in buffer
+- [x] show colors in buffer
 
 code analysis, language servers and linters
 - [x] treesitter for all supported use cases
