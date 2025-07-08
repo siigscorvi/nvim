@@ -5,6 +5,7 @@ require("trouble").setup({
 })
 
 require("todo-comments").setup({
+  signs = false,
   keywords = {
     FIX = { icon = " ", color = "error",
       alt = { "FIXME", "BUG", "FIXIT", "ISSUE" } },
