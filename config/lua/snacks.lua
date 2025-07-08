@@ -4,6 +4,6 @@ Snacks.setup({
 
   image = {
     enabled = true,
-    doc = { inline = true, float = false, },
+    doc = { inline = false, float = true, },
   },
 })
