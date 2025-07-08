@@ -123,4 +123,7 @@ in
 # latex
     vimtex
 
+# markdown
+  render-markdown-nvim
+
   ]
