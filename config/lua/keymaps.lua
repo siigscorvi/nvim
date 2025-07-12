@@ -19,6 +19,6 @@ vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<C-l>", ">gv")
 
 
-vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "Snacks: open lazygit" })
+vim.keymap.set("n", "<leader>l", "<cmd>LazyGit<cr>", { desc = "Snacks: open lazygit" })
 
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)

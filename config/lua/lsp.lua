@@ -99,7 +99,7 @@ end
 
 
 --- extra config for ltex_ls_plus, because I want to be able enable it when I want to
-vim.keymap.set("n", "<leader>ltx", function()
+vim.keymap.set("n", "<leader>tx", function()
   vim.lsp.config('ltex_plus', {
     on_attach = function()
       require("ltex_extra").setup({
