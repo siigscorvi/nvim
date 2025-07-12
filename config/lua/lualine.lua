@@ -21,8 +21,8 @@ require('lualine').setup({
     },
 
     lualine_x = {
-      { 'lsp_status', icon = '⚡', ignore_lsp = { 'ltex_plus', 'copilot' } },
-      { 'copilot', show_colors = true, show_loading = true },
+      { 'lsp_status', icon = '⚡', ignore_lsp = { 'ltex_plus' } }, -- 'copilot' used to be in ignore_lsp
+      { show_colors = true, show_loading = true }, -- 'copilot' used to be first item in this list
     },
 
     lualine_y = { 'encoding', 'filetype' },

@@ -43,9 +43,9 @@ require("blink.cmp").setup({
             text = function(ctx)
               local lspkind = require("lspkind")
               local icon = ctx.kind_icon
-              if ctx.source_name == "copilot" then
-                return ctx.kind_icon .. ctx.icon_gap
-              end
+              -- if ctx.source_name == "copilot" then
+              --   return ctx.kind_icon .. ctx.icon_gap
+              -- end
               if vim.tbl_contains({ "Path" }, ctx.source_name) then
                 local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
                 if dev_icon then
@@ -92,7 +92,8 @@ require("blink.cmp").setup({
 
   sources = {
     default = {
-      'path', 'lsp', 'cmdline', 'copilot', --- 'snippets', 'buffer',
+      'path', 'lsp', 'cmdline',
+      -- 'copilot', 'snippets', 'buffer',
     },
     providers = {
 
@@ -133,12 +134,12 @@ require("blink.cmp").setup({
       --   end,
       -- },
 
-      copilot = {
-        name = "copilot",
-        module = "blink-copilot",
-        score_offset = 100,
-        async = true,
-      },
+      -- copilot = {
+      --   name = "copilot",
+      --   module = "blink-copilot",
+      --   score_offset = 100,
+      --   async = true,
+      -- },
     },
   },
 

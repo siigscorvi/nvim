@@ -68,8 +68,8 @@ in
     lazygit-nvim
     gitsigns-nvim
 
-    copilot-lua
-    blink-copilot
+    # copilot-lua
+    # blink-copilot
 
     trouble-nvim
     todo-comments-nvim
@@ -110,7 +110,7 @@ in
     mini-trailspace
 
     lualine-nvim
-    copilot-lualine
+    # copilot-lualine
 
     promise-async
     nvim-ufo

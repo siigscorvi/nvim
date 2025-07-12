@@ -1,4 +1,3 @@
-[comment]: <> "LTeX: enabled=false"
 # My Neovim configuration flake
 The flake setup is mostly stolen from [this guide](https://primamateria.github.io/blog/neovim-nix/).
 
