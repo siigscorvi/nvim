@@ -38,5 +38,7 @@
     bash-language-server
 
     basedpyright
+
+    rPackages.languageserver
   ];
 }

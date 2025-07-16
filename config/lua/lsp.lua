@@ -69,10 +69,11 @@ local servers = {
         formatting = { command = { "nixfmt" }, },
         options = {
           nixos = {
-            expr = '(builtins.getFlake ("git+file://" + toString ./.)).nixosConfigurations.k-on.options',
+            expr = '(builtins.getFlake ("git+file://" + toString ./.)).nixosConfigurations.moses.options',
           },
           home_manager = {
-            expr = '(builtins.getFlake ("git+file://" + toString ./.)).homeConfigurations."ruixi@k-on".options',
+            expr =
+            '(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.moses.options.home-manager.users.type.getSubOptions []',
           },
         },
       },
@@ -83,11 +84,12 @@ local servers = {
     build = { args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-pv", "%f" } },
   },
 
-  basedpyright = { },
-  marksman = { },
-  clangd = { },
-  bashls = { },
-  cmake = { },
+  basedpyright = {},
+  marksman = {},
+  clangd = {},
+  bashls = {},
+  cmake = {},
+  r_language_server = {},
 
 }
 
