@@ -13,9 +13,14 @@
       flake = false;
     };
 
+    table-nvim = {
+      url = "github:SCJangra/table-nvim";
+      flake = false;
+    };
+
   };
 
-  outputs = { self, nixpkgs, neovim, telescope-luasnip-nvim }:
+  outputs = { self, nixpkgs, neovim, telescope-luasnip-nvim, table-nvim }:
     let
 
       overlayFlakeInputs = final: prev: {
@@ -26,6 +31,11 @@
               src = telescope-luasnip-nvim;
               pkgs = prev;
             };
+
+          table-nvim = import ./packages/vimPlugins/table-nvim.nix {
+            src = table-nvim;
+            pkgs = prev;
+          };
 
         };
       };

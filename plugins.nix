@@ -76,5 +76,6 @@ with pkgs.vimPlugins; [
 
 # markdown
   render-markdown-nvim
+  table-nvim
 
   ]
