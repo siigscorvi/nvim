@@ -89,7 +89,6 @@ local servers = {
   clangd = {},
   bashls = {},
   cmake = {},
-  r_language_server = {},
 
 }
 
