@@ -36,8 +36,8 @@ vim.api.nvim_create_autocmd(
 
 --- general diagnostic settings ---
 vim.diagnostic.config({
-  -- virtual_lines = true,
-  virtual_text = true,
+  virtual_lines = true,
+  -- virtual_text = true,
   underline = true,
 
   signs = {
