@@ -2,6 +2,9 @@
 # List all the plugins I need here
 with pkgs.vimPlugins; [
 # debugging
+  nvim-dap-lldb
+  nvim-dap
+  vimspector
 
 # editing support
   blink-cmp

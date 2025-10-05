@@ -90,6 +90,7 @@ local servers = {
   },
 
   basedpyright = {}, --- python
+  rust_analyzer = {}, --- rust
   marksman = {}, --- markdown
   bashls = {}, --- bash
   -- clangd = {}, --- C/C++

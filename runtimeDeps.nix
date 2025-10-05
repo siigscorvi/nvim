@@ -10,6 +10,9 @@
     ghostscript
     mermaid-cli
 
+    # debugger
+    lldb
+
     # lazygit
     lazygit
 
@@ -38,5 +41,7 @@
     bash-language-server
 
     basedpyright
+
+    rust-analyzer
   ];
 }
