@@ -43,5 +43,6 @@
     basedpyright
 
     rust-analyzer
+    rustfmt
   ];
 }
