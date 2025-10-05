@@ -52,6 +52,7 @@ vim.diagnostic.config({
 })
 
 --- setup servers with their config ---
+local hostname = vim.fn.hostname()
 local servers = {
   --- lua_ls
   lua_ls = {
@@ -69,11 +70,16 @@ local servers = {
         formatting = { command = { "nixfmt" }, },
         options = {
           nixos = {
-            expr = '(builtins.getFlake ("git+file://" + toString ./.)).nixosConfigurations.moses.options',
+            expr = string.format(
+              '(builtins.getFlake ("git+file://" + toString ./.)).nixosConfigurations.%s.options',
+              hostname
+            )
           },
           home_manager = {
-            expr =
-            '(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.moses.options.home-manager.users.type.getSubOptions []',
+            expr = string.format(
+            '(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.%s.options.home-manager.users.type.getSubOptions []',
+              hostname
+            )
           },
         },
       },
