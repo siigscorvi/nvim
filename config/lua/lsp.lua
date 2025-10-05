@@ -54,15 +54,14 @@ vim.diagnostic.config({
 --- setup servers with their config ---
 local hostname = vim.fn.hostname()
 local servers = {
-  --- lua_ls
-  lua_ls = {
+
+  lua_ls = { --- lua
     settings = {
       Lua = { diagnostics = { globals = { 'vim' } } }
     }
   },
 
-  --- nixd
-  nixd = {
+  nixd = { --- nix
     cmd = { "nixd" },
     settings = {
       nixd = {
@@ -86,15 +85,15 @@ local servers = {
     },
   },
 
-  texlab = {
+  texlab = { --- latex
     build = { args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-pv", "%f" } },
   },
 
-  basedpyright = {},
-  marksman = {},
-  clangd = {},
-  bashls = {},
-  cmake = {},
+  basedpyright = {}, --- python
+  marksman = {}, --- markdown
+  bashls = {}, --- bash
+  -- clangd = {}, --- C/C++
+  -- cmake = {}, --- cmake
 
 }
 
